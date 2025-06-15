@@ -1,16 +1,13 @@
-const isGithubPages = process.env.GITHUB_ACTIONS || false;
-const repoName = 'my-lair';
+const isProd = process.env.NODE_ENV === 'production';
 
-const nextConfig = {
+const repoName = 'my-lair'; // your repo name on GitHub
+
+module.exports = {
   output: 'export',
   trailingSlash: true,
+  basePath: isProd ? `/${repoName}` : '',
+  assetPrefix: isProd ? `/${repoName}/` : '',
   images: {
-    unoptimized: true,
+    unoptimized: true, // required for next export if you're using next/image
   },
-  ...(isGithubPages && {
-    basePath: `/${repoName}`,
-    assetPrefix: `/${repoName}/`,
-  }),
 };
-
-module.exports = nextConfig;
