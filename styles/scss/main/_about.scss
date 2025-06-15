@@ -1,0 +1,472 @@
+/*---------------------------------------------------*/
+/*	06) TOKYO ABOUT
+/*---------------------------------------------------*/
+
+.jun_lair_about {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding: 100px 0px 100px 0px;
+}
+
+.jun_lair_button {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+.jun_lair_button a {
+  color: #fff;
+  display: inline-block;
+  background-color: #000;
+  padding: 12px 40px 12px 40px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.jun_lair_about .top_author_image {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  position: relative;
+  margin-bottom: 35px;
+}
+.jun_lair_about .top_author_image img {
+  min-width: 100%;
+}
+.jun_lair_about .about_title {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  border-bottom: 1px solid #dfdfdf;
+  padding-bottom: 20px;
+  margin-bottom: 27px;
+}
+.jun_lair_about .about_title h3 {
+  font-size: 22px;
+  font-weight: 700;
+}
+.jun_lair_about .about_text {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  border-bottom: 1px solid #dfdfdf;
+  padding-bottom: 31px;
+  margin-bottom: 30px;
+}
+.jun_lair_about .about_text p {
+  margin-bottom: 11px;
+}
+.jun_lair_about .about_text p:last-child {
+  margin-bottom: 0px;
+}
+.jun_lair_short_info {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  display: flex;
+  border-bottom: 1px solid #dfdfdf;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+.jun_lair_short_info .left {
+  width: 50%;
+  padding-right: 50px;
+}
+.jun_lair_short_info .right {
+  width: 50%;
+  padding-left: 50px;
+}
+.jun_lair_info {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+.jun_lair_info ul {
+  margin: 0px;
+  list-style-type: none;
+}
+.jun_lair_info ul li {
+  margin: 0px;
+}
+.jun_lair_info ul li span:first-child {
+  min-width: 100px;
+  float: left;
+  margin-right: 10px;
+  font-weight: 700;
+  color: #000;
+}
+.jun_lair_info ul li a {
+  color: #767676;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.jun_lair_info ul li a:hover {
+  color: #000;
+}
+.lair_progress {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+.progress_inner {
+  width: 100%;
+  margin-bottom: 17px;
+}
+.progress_inner:last-child {
+  margin-bottom: 0px;
+}
+.progress_inner > span {
+  margin: 0px 0px 5px 0px;
+  width: 100%;
+  display: block;
+  text-align: left;
+  color: #000;
+}
+.progress_inner span.number {
+  float: right;
+}
+.progress_inner .background {
+  background: rgba(0, 0, 0, 0.09);
+  width: 100%;
+  min-width: 100%;
+  position: relative;
+  height: 3px;
+}
+.progress_inner .background .bar_in {
+  background: #000;
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+.progress_inner .background .bar {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.jun_lair_skillbox {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding: 90px 0px 90px 0px;
+}
+.jun_lair_skillbox .in {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  display: flex;
+}
+.jun_lair_skillbox .left {
+  width: 50%;
+  padding-right: 50px;
+}
+.jun_lair_skillbox .right {
+  width: 50%;
+  padding-left: 50px;
+}
+.lair_section_title {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  margin-bottom: 40px;
+}
+.lair_section_title h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.jun_lair_skill_list {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+.jun_lair_skill_list ul {
+  margin: 0px;
+  list-style-type: none;
+}
+.jun_lair_skill_list ul li {
+  margin: 0px;
+  padding-left: 25px;
+  position: relative;
+}
+.jun_lair_skill_list ul li .svg {
+  color: #000;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.jun_lair_resumebox {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  background-color: #fff;
+  padding: 93px 0px;
+}
+.jun_lair_resumebox .in {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  display: flex;
+}
+.jun_lair_resumebox .left {
+  width: 50%;
+  padding-right: 50px;
+}
+.jun_lair_resumebox .right {
+  width: 50%;
+  padding-left: 50px;
+}
+.jun_lair_resume_list {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+.jun_lair_resume_list ul {
+  margin: 0px;
+  list-style-type: none;
+  position: relative;
+  display: inline-block;
+  padding-top: 10px;
+}
+.jun_lair_resume_list ul:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.07);
+}
+.jun_lair_resume_list ul li {
+  margin: 0px;
+  width: 100%;
+  float: left;
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 45px;
+}
+.jun_lair_resume_list ul li:last-child {
+  padding-bottom: 0px;
+}
+.jun_lair_resume_list ul li:before {
+  content: '';
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  background: #fff;
+  border-radius: 100%;
+  border: solid 1px #ccc;
+  left: -9px;
+  top: 8px;
+}
+.jun_lair_resume_list ul li .list_inner {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.jun_lair_resume_list ul li .time {
+  width: 50%;
+  padding-right: 20px;
+}
+.jun_lair_resume_list ul li .time span {
+  display: inline-block;
+  padding: 5px 25px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.jun_lair_resume_list ul li .place {
+  width: 50%;
+  padding-left: 20px;
+}
+.jun_lair_resume_list ul li .place h3 {
+  font-size: 16px;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+.jun_lair_resume_list ul li .place span {
+  font-size: 14px;
+}
+.jun_lair_testimonials {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding: 100px 0px;
+}
+.jun_lair_testimonials .list {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  overflow: hidden;
+}
+.jun_lair_testimonials .list ul {
+  margin: 0px;
+  list-style-type: none;
+  cursor: e-resize;
+}
+.jun_lair_testimonials .list ul li {
+  margin: 0px;
+}
+.jun_lair_testimonials .list ul li .list_inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  position: relative;
+}
+.jun_lair_testimonials .list ul li .text {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  position: relative;
+  border: 2px solid #e5edf4;
+  padding: 40px;
+  margin-bottom: 30px;
+}
+.jun_lair_testimonials .list ul li .text:before {
+  position: absolute;
+  content: '';
+  height: 0px;
+  width: 0px;
+  top: 100%;
+  left: 50px;
+  border: solid transparent;
+  border-top-color: #e5edf4;
+  border-width: 18px 18px 0px 0px;
+}
+.jun_lair_testimonials .list ul li .text:after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 50px;
+  height: 0px;
+  width: 0px;
+  border: solid transparent;
+  border-top-color: #f6fbff;
+  border-width: 14px 13px 0px 0px;
+  margin-left: 2px;
+}
+.jun_lair_testimonials .list ul li .text i {
+  position: absolute;
+  z-index: 1;
+  font-size: 30px;
+  top: -29px;
+  left: 50px;
+}
+.jun_lair_testimonials .details {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.jun_lair_testimonials .details .image {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+.jun_lair_testimonials .details .image .main {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
+}
+.jun_lair_testimonials .details .info {
+  padding-left: 20px;
+}
+.jun_lair_testimonials .details .info h3 {
+  font-size: 16px;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+.jun_lair_testimonials .details .info span {
+  font-size: 14px;
+}
+.jun_lair_testimonials .owl-carousel .owl-stage-outer {
+  overflow: hidden;
+}
+.jun_lair_testimonials .owl-carousel .owl-stage-outer {
+  overflow: visible;
+}
+.jun_lair_testimonials .owl-item.active {
+  opacity: 1;
+}
+.jun_lair_testimonials .owl-item {
+  opacity: 0;
+}
+//  responsive
+@media (max-width: 768px) {
+  .jun_lair_short_info {
+    flex-direction: column;
+  }
+  .jun_lair_short_info .left {
+    width: 100%;
+    padding-right: 0px;
+  }
+  .jun_lair_short_info .right {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .jun_lair_skillbox .in {
+    flex-direction: column;
+  }
+  .jun_lair_skillbox .in .left {
+    width: 100%;
+    padding-right: 0px;
+    margin-bottom: 60px;
+  }
+  .jun_lair_skillbox .in .right {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .jun_lair_resumebox .in {
+    flex-direction: column;
+  }
+  .jun_lair_resumebox .in .left {
+    width: 100%;
+    padding-right: 0px;
+    margin-bottom: 60px;
+  }
+  .jun_lair_resumebox .in .right {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .jun_lair_resume_list ul li .list_inner {
+    display: block;
+  }
+  .jun_lair_resume_list ul li .time {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .jun_lair_resume_list ul li .place {
+    width: 100%;
+  }
+}
