@@ -4,7 +4,7 @@ const isGithubPages = process.env.GITHUB_ACTIONS || false;
 const repoName = 'my-lair';
 
 const nextConfig = {
-  output: 'export',
+  output: 'standalone',
   trailingSlash: true,
   images: {
     unoptimized: true,
