@@ -16,7 +16,7 @@ const Services = () => {
         url: string;
         text: string;
         showCase: React.JSX.Element;
-        largeTitle: string;
+        largeTitle?: string;
         descriptions: React.JSX.Element;
       }
     | undefined
