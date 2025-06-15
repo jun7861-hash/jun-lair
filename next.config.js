@@ -1,6 +1,6 @@
 const isProd = process.env.NODE_ENV === 'production';
 
-const repoName = 'my-lair'; // your repo name on GitHub
+const repoName = 'jun-lair';
 
 module.exports = {
   output: 'export',
@@ -8,6 +8,6 @@ module.exports = {
   basePath: isProd ? `/${repoName}` : '',
   assetPrefix: isProd ? `/${repoName}/` : '',
   images: {
-    unoptimized: true, // required for next export if you're using next/image
+    unoptimized: true,
   },
 };
