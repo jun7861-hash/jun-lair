@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Modal from 'react-modal';
 
 import { servicesData } from '@/data/servicesData';
-import ShareSocial from '@/components/social-share/ShareSocial';
 
 Modal.setAppElement('#__next');
 
@@ -25,8 +24,20 @@ const Services = () => {
 
   const handleBServicesData = (id: number) => {
     const find = servicesData.find((item) => item?.id === id);
-    setSingleData(find);
-    setIsOpen(true);
+
+    if (find) {
+      setSingleData({
+        id: find.id,
+        no: find.no,
+        title: find.title,
+        url: find.url,
+        text: find.text,
+        largeTitle: find.largeTitle ?? '',
+        largeImg: (find as any).largeImg ?? '', // or a proper default image URL
+        descriptions: find.descriptions,
+      });
+      setIsOpen(true);
+    }
   };
 
   const handleModle = (id: number) => {
