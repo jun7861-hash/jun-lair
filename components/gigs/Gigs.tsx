@@ -4,10 +4,12 @@ import Modal from 'react-modal';
 
 import { servicesData } from '@/data/servicesData';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 Modal.setAppElement('#__next');
 
 const Services = () => {
+  const { basePath } = useRouter();
   const [singleData, setSingleData] = useState<
     | {
         id: number;
@@ -64,7 +66,7 @@ const Services = () => {
         <div className="jun_lair_modalbox_news">
           <button className="close-modal" onClick={() => setIsOpen(false)}>
             <Image
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/svg/cancel.svg`}
+              src={`${basePath}/img/svg/cancel.svg`}
               width={100}
               height={100}
               alt="close icon"

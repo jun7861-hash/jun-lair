@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 const socialShare = [
   {
@@ -12,6 +13,7 @@ const socialShare = [
 ] as const;
 
 const Social = () => {
+  const { basePath } = useRouter();
   return (
     <>
       <ul className="social">
@@ -20,7 +22,7 @@ const Social = () => {
             <a href={`${val.link}`} target="_blank" rel="noreferrer">
               <Image
                 className="svg"
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/svg/social/${val.iconName}.svg`}
+                src={`${basePath}/img/svg/social/${val.iconName}.svg`}
                 alt={val.iconName}
                 width={100}
                 height={100}

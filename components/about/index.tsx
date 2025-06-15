@@ -4,10 +4,12 @@ import Intro from '@/components/about/Intro';
 import KnowledgeInterest from '@/components/about/KnowledgeInterest';
 import PersonalInfo from '@/components/about/PersonalInfo';
 import Resume from '@/components/about/Resume';
+import { useRouter } from 'next/router';
 
 Modal.setAppElement('#__next');
 
 const AboutMain = () => {
+  const { basePath } = useRouter();
   return (
     <>
       <div className="container">
@@ -27,10 +29,7 @@ const AboutMain = () => {
           </div>
 
           <div className="jun_lair_button" data-position="left">
-            <a
-              href={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/junr.pdf`}
-              download
-            >
+            <a href={`${basePath}/img/junr.pdf`} download>
               <span>Download Resume</span>
             </a>
           </div>

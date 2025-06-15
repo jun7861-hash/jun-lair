@@ -1,16 +1,18 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import Modal from 'react-modal';
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
+import Skeleton from 'react-loading-skeleton';
 
 import ShareSocial from '@/components/social-share/ShareSocial';
 import useGetNews from '@/hooks/getNews';
 import { Article, Articles } from '@/hooks/getNews/types';
 import { formatDate } from '@/utilis/formatDate';
+import { useRouter } from 'next/router';
 
 Modal.setAppElement('#__next');
 
 const News = () => {
+  const { basePath } = useRouter();
   const { data, isLoading } = useGetNews();
   const [singleData, setSingleData] = useState<Article>();
   const [isOpen, setIsOpen] = useState(false);
@@ -125,7 +127,7 @@ const News = () => {
             <Image
               width={45}
               height={45}
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/svg/cancel.svg`}
+              src={`${process.env.basePath}/img/svg/cancel.svg`}
               alt="close icon"
             />
           </button>

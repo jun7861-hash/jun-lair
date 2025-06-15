@@ -1,8 +1,10 @@
 import { ReactTyped } from 'react-typed';
+import { useRouter } from 'next/router';
 
 import Social from '@/components/Social';
 
 const Home = () => {
+  const { basePath } = useRouter();
   return (
     <div className="jun_lair_home">
       <div className="home_content">
@@ -10,7 +12,7 @@ const Home = () => {
           <div
             className="image avatar_img"
             style={{
-              backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}/img/thumbs/prf.png)`,
+              backgroundImage: `url(${basePath}/img/thumbs/prf.png)`,
             }}
           ></div>
         </div>

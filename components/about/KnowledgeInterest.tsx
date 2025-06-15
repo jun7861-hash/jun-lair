@@ -1,6 +1,8 @@
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 const KnowledgeInterest = () => {
+  const { basePath } = useRouter();
   const knowledgeContent = [
     {
       id: 1,
@@ -52,7 +54,7 @@ const KnowledgeInterest = () => {
                       width={10}
                       height={10}
                       className="svg"
-                      src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/svg/rightarrow.svg`}
+                      src={`${basePath}/img/svg/rightarrow.svg`}
                       alt="arrow"
                     />
                     {val}

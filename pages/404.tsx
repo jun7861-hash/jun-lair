@@ -1,9 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 import Seo from '@/components/Seo';
 
 const NotFound = () => {
+  const { basePath } = useRouter();
+
   return (
     <>
       <Seo pageTitle="404" />
@@ -17,7 +20,7 @@ const NotFound = () => {
                   width={126}
                   height={22}
                   priority
-                  src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/logo/dark.png`}
+                  src={`${basePath}/img/logo/dark.png`}
                   alt="jun's lair"
                 />
               </Link>
