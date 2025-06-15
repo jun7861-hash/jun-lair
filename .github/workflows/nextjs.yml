@@ -33,7 +33,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set environment variable
-        run: echo "NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL"
+        run: echo "NEXT_PUBLIC_BASE_PATH=$NEXT_PUBLIC_BASE_PATH"
         env:
           NEXT_PUBLIC_NEWS: '5a10f779c5594b3e8b65b893d17c201f'
           NEXT_PUBLIC_EMAILJS_SERVICE_ID: 'service_9fl9uio'
