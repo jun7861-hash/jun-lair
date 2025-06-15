@@ -1,5 +1,5 @@
 const introContent = {
-  image: '/img/slider/1.jpg',
+  image: `${process.env.NEXT_PUBLIC_BASE_PATH}/img/slider/1.jpg`,
   name: 'Jun Estropigan',
   designation: 'Software Engineer',
   text: (

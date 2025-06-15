@@ -22,7 +22,7 @@ const Sidebar = () => {
                 priority
                 width={140}
                 height={20}
-                src="/img/logo/dark.png"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/logo/dark.png`}
                 alt="jun's lair"
               />
             </Link>
@@ -52,7 +52,7 @@ const Sidebar = () => {
                 width={135}
                 height={20}
                 priority
-                src="/img/logo/dark.png"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/logo/dark.png`}
                 alt="jun's lair"
               />
             </Link>

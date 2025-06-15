@@ -20,7 +20,7 @@ const Social = () => {
             <a href={`${val.link}`} target="_blank" rel="noreferrer">
               <Image
                 className="svg"
-                src={`/img/svg/social/${val.iconName}.svg`}
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/svg/social/${val.iconName}.svg`}
                 alt={val.iconName}
                 width={100}
                 height={100}

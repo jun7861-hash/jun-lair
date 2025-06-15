@@ -27,7 +27,10 @@ const AboutMain = () => {
           </div>
 
           <div className="jun_lair_button" data-position="left">
-            <a href="/img/junr.pdf" download>
+            <a
+              href={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/junr.pdf`}
+              download
+            >
               <span>Download Resume</span>
             </a>
           </div>

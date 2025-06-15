@@ -17,7 +17,7 @@ const NotFound = () => {
                   width={126}
                   height={22}
                   priority
-                  src="/img/logo/dark.png"
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/logo/dark.png`}
                   alt="jun's lair"
                 />
               </Link>

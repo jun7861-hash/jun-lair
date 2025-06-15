@@ -52,7 +52,7 @@ const KnowledgeInterest = () => {
                       width={10}
                       height={10}
                       className="svg"
-                      src="/img/svg/rightarrow.svg"
+                      src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/svg/rightarrow.svg`}
                       alt="arrow"
                     />
                     {val}

@@ -10,7 +10,7 @@ const Home = () => {
           <div
             className="image avatar_img"
             style={{
-              backgroundImage: 'url(/img/thumbs/prf.png)',
+              backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}/img/thumbs/prf.png)`,
             }}
           ></div>
         </div>

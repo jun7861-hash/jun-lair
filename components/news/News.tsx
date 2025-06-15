@@ -125,7 +125,7 @@ const News = () => {
             <Image
               width={45}
               height={45}
-              src="/img/svg/cancel.svg"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/svg/cancel.svg`}
               alt="close icon"
             />
           </button>
