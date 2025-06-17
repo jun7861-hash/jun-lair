@@ -1,18 +1,18 @@
 export const inspirationData = [
   {
     brand: 'envato',
-    path: '/img/inspiration/dark/envato.svg',
+    path: `${process.env.NEXT_PUBLIC_BASE_PATH}/img/inspiration/dark/envato.svg`,
   },
   {
     brand: 'facebook',
-    path: '/img/inspiration/dark/facebook.svg',
+    path: `${process.env.NEXT_PUBLIC_BASE_PATH}/img/inspiration/dark/facebook.svg`,
   },
   {
     brand: 'react',
-    path: '/img/inspiration/dark/react.svg',
+    path: `${process.env.NEXT_PUBLIC_BASE_PATH}/img/inspiration/dark/react.svg`,
   },
   {
     brand: 'nextjs',
-    path: '/img/inspiration/dark/nextjs.svg',
+    path: `${process.env.NEXT_PUBLIC_BASE_PATH}/img/inspiration/dark/nextjs.svg`,
   },
 ];

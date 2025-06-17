@@ -39,7 +39,7 @@ jobs:
           NEXT_PUBLIC_EMAILJS_SERVICE_ID: 'service_9fl9uio'
           NEXT_PUBLIC_EMAILJS_TEMPLATE_ID: 'template_sv4ts4b'
           NEXT_PUBLIC_EMAILJS_PUBLIC_KEY: 'Vx4shufl2l4n_KP0o'
-          NEXT_PUBLIC_BASE_PATH: 'https://jun7861-hash.github.io/jun-lair'
+          NEXT_PUBLIC_BASE_PATH: '/jun-lair'
 
       - name: Detect package manager
         id: detect-package-manager

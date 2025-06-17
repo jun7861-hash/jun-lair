@@ -24,13 +24,13 @@ export const servicesData = [
     no: '01',
     title: 'Pepperstone Public Site',
     url: 'https://pepperstone.com/',
-    text: 'Contribute in Pepperstone site migration to Next.js, boosting speed, dependability and optimizing multilingual conten',
+    text: `Contribute in Pepperstone site migration to Next.js, boosting speed, dependability and optimizing multilingual conten`,
     showCase: (
       <div className="image">
         <div
           className="main"
           style={{
-            backgroundImage: 'url(/img/gigs/pepperstone.jpeg)',
+            backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}/img/gigs/pepperstone.jpeg)`,
           }}
         ></div>
       </div>
@@ -61,13 +61,13 @@ export const servicesData = [
     no: '02',
     title: 'Pepperstone Web Trading',
     url: 'https://registration.pepperstone.com/',
-    text: 'A trading platform with monitoring tools, KYC: ID verification, user feedback system for an improved user experience and enhanced security.',
+    text: `A trading platform with monitoring tools, KYC: ID verification, user feedback system for an improved user experience and enhanced security.`,
     showCase: (
       <div className="image">
         <div
           className="main"
           style={{
-            backgroundImage: 'url(/img/gigs/pepperstone2.jpeg)',
+            backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}/img/gigs/pepperstone2.jpeg)`,
           }}
         ></div>
       </div>
@@ -108,13 +108,13 @@ export const servicesData = [
     no: '03',
     title: 'Pepperstone Client Onboarding',
     url: 'https://secure.pepperstone.com/register/',
-    text: 'A streamlined onboarding process designed for fast account setup, KYC compliance, and secure identity verification, ensuring a smooth start for new clients.',
+    text: `A streamlined onboarding process designed for fast account setup, KYC compliance, and secure identity verification, ensuring a smooth start for new clients.`,
     showCase: (
       <div className="image">
         <div
           className="main"
           style={{
-            backgroundImage: 'url(/img/gigs/pepperstone3.png)',
+            backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}/img/gigs/pepperstone3.png)`,
           }}
         ></div>
       </div>
@@ -152,13 +152,13 @@ export const servicesData = [
     no: '04',
     title: 'Common Libray: Form Component',
     url: 'https://common-library-demo.web.app/test/validatorExpectedResult',
-    text: 'Crafted an exclusive NPM package – a highly customizable form component library with robust validation, ensuring seamless and accurate data input.',
+    text: `Crafted an exclusive NPM package – a highly customizable form component library with robust validation, ensuring seamless and accurate data input.`,
     showCase: (
       <div className="image">
         <div
           className="main"
           style={{
-            backgroundImage: 'url(/img/gigs/cl.png)',
+            backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}/img/gigs/cl.png)`,
           }}
         ></div>
       </div>
@@ -198,7 +198,7 @@ export const servicesData = [
     no: '05',
     title: 'Project Gueridon: Smart Table',
     url: '',
-    text: 'An integrated system, showcasing an interactive and innovative way of restaurant business procedures, an extraordinary dining experience.',
+    text: `An integrated system, showcasing an interactive and innovative way of restaurant business procedures, an extraordinary dining experience.`,
     showCase: (
       <div className="image">
         <Carousel
@@ -218,25 +218,25 @@ export const servicesData = [
           <div
             className="main"
             style={{
-              backgroundImage: 'url(/img/gigs/pgueridon1.jpg)',
+              backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}/img/gigs/pgueridon1.jpg)`,
             }}
           ></div>
           <div
             className="main"
             style={{
-              backgroundImage: 'url(/img/gigs/pgueridon2.png)',
+              backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}/img/gigs/pgueridon2.png)`,
             }}
           ></div>
           <div
             className="main"
             style={{
-              backgroundImage: 'url(/img/gigs/pgueridon3.png)',
+              backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}/img/gigs/pgueridon3.png)`,
             }}
           ></div>
           <div
             className="main"
             style={{
-              backgroundImage: 'url(/img/gigs/pgueridon4.png)',
+              backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}/img/gigs/pgueridon4.png)`,
             }}
           ></div>
         </Carousel>
