@@ -5,7 +5,7 @@ import Skeleton from 'react-loading-skeleton';
 
 import ShareSocial from '@/components/social-share/ShareSocial';
 import useGetNews from '@/hooks/getNews';
-import { Article, Articles } from '@/hooks/getNews/types';
+import { Article } from '@/hooks/getNews/types';
 import { formatDate } from '@/utilis/formatDate';
 import { useRouter } from 'next/router';
 
@@ -127,7 +127,7 @@ const News = () => {
             <Image
               width={45}
               height={45}
-              src={`${process.env.basePath}/img/svg/cancel.svg`}
+              src={`${basePath}/img/svg/cancel.svg`}
               alt="close icon"
             />
           </button>
