@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 
 import { News } from '@/hooks/getNews/types';
+import { env } from '@/next.config';
 
 const newsUrl = 'https://newsapi.org' as const;
 
@@ -12,7 +13,7 @@ const useGetNews = () => {
     const fetchNews = async () => {
       try {
         const response = await fetch(
-          `${newsUrl}/v2/top-headlines?sources=techcrunch&apiKey=${process.env.NEXT_PUBLIC_NEWS}`
+          `${newsUrl}/v2/top-headlines?sources=techcrunch&apiKey=${env.publicNewsKey}`
         );
 
         if (!response.ok) {
