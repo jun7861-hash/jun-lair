@@ -4,6 +4,7 @@ import { toast } from 'react-toastify';
 
 import Map from '@/components/Map';
 import 'react-toastify/dist/ReactToastify.css';
+import { env } from '@/next.config';
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -12,10 +13,10 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        env.emailjsServiceId,
+        env.emailjsTemplateId,
         form.current as string | HTMLFormElement,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+        env.emailjsPublicKey
       )
       .then(
         (result) => {
