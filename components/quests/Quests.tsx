@@ -16,7 +16,7 @@ const Services = () => {
         title: string;
         url: string;
         text: string;
-        largeImg: string;
+        showCase: React.JSX.Element;
         largeTitle: string;
         descriptions: React.JSX.Element;
       }
@@ -35,7 +35,7 @@ const Services = () => {
         url: find.url,
         text: find.text,
         largeTitle: find.largeTitle ?? '',
-        largeImg: (find as any).largeImg ?? '', // or a proper default image URL
+        showCase: find.showCase ?? '', // or a proper default image URL
         descriptions: find.descriptions,
       });
       setIsOpen(true);
@@ -82,14 +82,7 @@ const Services = () => {
           </button>
           <div className="box_inner">
             <div className="description_wrap scrollable">
-              <div className="image">
-                <div
-                  className="main"
-                  style={{
-                    backgroundImage: `url(${singleData?.largeImg})`,
-                  }}
-                ></div>
-              </div>
+              {singleData?.showCase}
               <div className="details">
                 <div className="extra">
                   <p className="url">
