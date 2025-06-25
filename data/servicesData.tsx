@@ -1,3 +1,4 @@
+import { basePath } from '@/next.config';
 import Carousel from 'react-multi-carousel';
 
 const responsive = {
@@ -30,7 +31,7 @@ export const servicesData = [
         <div
           className="main"
           style={{
-            backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}/img/gigs/pepperstone.jpeg)`,
+            backgroundImage: `url(${basePath}/img/gigs/pepperstone.jpeg)`,
           }}
         ></div>
       </div>
@@ -67,7 +68,7 @@ export const servicesData = [
         <div
           className="main"
           style={{
-            backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}/img/gigs/pepperstone2.jpeg)`,
+            backgroundImage: `url(${basePath}/img/gigs/pepperstone2.jpeg)`,
           }}
         ></div>
       </div>
@@ -114,7 +115,7 @@ export const servicesData = [
         <div
           className="main"
           style={{
-            backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}/img/gigs/pepperstone3.png)`,
+            backgroundImage: `url(${basePath}/img/gigs/pepperstone3.png)`,
           }}
         ></div>
       </div>
@@ -158,7 +159,7 @@ export const servicesData = [
         <div
           className="main"
           style={{
-            backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}/img/gigs/cl.png)`,
+            backgroundImage: `url(${basePath}/img/gigs/cl.png)`,
           }}
         ></div>
       </div>
@@ -218,25 +219,25 @@ export const servicesData = [
           <div
             className="main"
             style={{
-              backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}/img/gigs/pgueridon1.jpg)`,
+              backgroundImage: `url(${basePath}/img/gigs/pgueridon1.jpg)`,
             }}
           ></div>
           <div
             className="main"
             style={{
-              backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}/img/gigs/pgueridon2.png)`,
+              backgroundImage: `url(${basePath}/img/gigs/pgueridon2.png)`,
             }}
           ></div>
           <div
             className="main"
             style={{
-              backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}/img/gigs/pgueridon3.png)`,
+              backgroundImage: `url(${basePath}/img/gigs/pgueridon3.png)`,
             }}
           ></div>
           <div
             className="main"
             style={{
-              backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}/img/gigs/pgueridon4.png)`,
+              backgroundImage: `url(${basePath}/img/gigs/pgueridon4.png)`,
             }}
           ></div>
         </Carousel>
