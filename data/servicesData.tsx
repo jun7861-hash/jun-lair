@@ -197,6 +197,60 @@ export const servicesData = [
   {
     id: 5,
     no: '05',
+    title: 'ANA',
+    url: 'https://www.ana.co.jp/en/ph/',
+    text: `This project presents a high-end digital experience tailored for All Nippon Airways. The website features an array of complex pages enhanced with intricate animations. Every visual element is crafted with absolute precision, embodying the essence of "perfect pixel" design.`,
+    showCase: (
+      <div className="image">
+        <Carousel
+          swipeable={false}
+          draggable={false}
+          responsive={responsive}
+          ssr={false}
+          infinite={true}
+          autoPlay={true}
+          keyBoardControl={true}
+          customTransition="all 3"
+          containerClass="carousel-container"
+          removeArrowOnDeviceType={['tablet', 'mobile']}
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
+        >
+          <div
+            className="main"
+            style={{
+              backgroundImage: `url(${basePath}/img/gigs/pgueridon1.jpg)`,
+            }}
+          ></div>
+        </Carousel>
+      </div>
+    ),
+    largeTitle: 'Airways Journey',
+    descriptions: (
+      <>
+        <p>
+          A standout feature of this digital experience is its dynamic
+          animations that breathe life into each page. Users are guided through
+          an engaging interaction flow, making their exploration of flight
+          options, services, and information not only informative but also
+          enjoyable. The animations are thoughtfully integrated to enhance
+          usability without distracting from the core content.
+        </p>
+
+        <p>
+          Additionally, the site’s responsive design ensures that it provides a
+          flawless experience on any device. Whether on desktop or mobile, users
+          will find the interface intuitive, with easy navigation and quick
+          access to essential features. This project exemplifies how modern
+          design can elevate the customer experience in the competitive airline
+          industry.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: 6,
+    no: '06',
     title: 'Project Gueridon: Smart Table',
     url: '',
     text: `An integrated system, showcasing an interactive and innovative way of restaurant business procedures, an extraordinary dining experience.`,
@@ -241,7 +295,6 @@ export const servicesData = [
             }}
           ></div>
         </Carousel>
-        ;
       </div>
     ),
     largeTitle: 'Form Wizard',
