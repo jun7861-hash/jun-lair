@@ -9,7 +9,7 @@ const index = () => {
             <div className="title_flex">
               <div className="left">
                 <span>Quests</span>
-                <h3>Small Random Projects</h3>
+                <h3>Projects</h3>
               </div>
             </div>
           </div>
